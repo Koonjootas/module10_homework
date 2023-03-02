@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Реализовать чат на основе эхо-сервера wss://echo-ws-service.herokuapp.com.</h1>
+<p>Интерфейс состоит из input, куда вводится текст сообщения, и кнопки «Отправить».</p>
+<p>При клике на кнопку «Отправить» сообщение должно появляться в окне переписки.</p>
+<p>Эхо-сервер будет отвечать вам тем же сообщением, его также необходимо выводить в чат:</p>
+<p>Добавить в чат механизм отправки гео-локации:</p>
+<p>При клике на кнопку «Гео-локация» необходимо отправить данные серверу и в чат вывести ссылку на https://www.openstreetmap.org/ с вашей гео-локацией</p>
+Сообщение, которое отправит обратно эхо-сервер, не выводить.
+<div class="result">
+<p>Чат:</p>
+<div class="chat">
+    <nav>
+        <form action="#" id="mars-once">
+        <input class="message-place" type="text" placeholder="Здесь вводится текст сообщения">
+        <button class="btn send" type="submit">Отправить</button>
+        <!-- <input class="btn" type="submit" value="Запрос"> -->
+        <button class="btn geo" type="submit"> Гео-локация</button>
+    </form>
+    </nav>
+    <div class="chat-window">
+    </div>
+</div>
+
+</div>
+</body>
+<script src="script.js"></script>
+</html>
